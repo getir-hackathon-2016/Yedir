@@ -1,3 +1,1 @@
-http://localhost:5001/ portundan client angular
-
-5000 server portu node.js
+[ portundan client angular](http://192.168.1.144:5001)
