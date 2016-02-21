@@ -40,7 +40,7 @@ var uristring =
     'mongodb://heroku_z802lth6:8uoqc89ntqifsm7undqksf2cfq@ds055935.mongolab.com:55935/heroku_z802lth6';
 
 var theport = process.env.PORT || 5000;
-
+var yedirport =5001;
 
 
 mongoose.connect(uristring, function (err, res) {
@@ -162,9 +162,9 @@ function createWebpage (req, res) {
     });
 }
 
-// Tell the console we're getting ready.
-// The listener in http.createServer should still be active after these messages are emitted.
+console.log('localhost:5001 %d', yedirport);
 console.log('http server will be listening on port %d', theport);
+
 
 
 // The rudimentary HTML content in three pieces.
